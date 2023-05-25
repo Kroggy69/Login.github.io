@@ -1,0 +1,282 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: popb;
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: popl;
+    src: url(font/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: popt;
+    src: url(font/Poppins-Thin.ttf);
+}
+
+@font-face {
+    font-family: popm;
+    src: url(font/Poppins-Medium.ttf);
+}
+
+body{
+    background: rgb(231,226,96);
+    background: linear-gradient(125deg, rgba(231,226,96,1) 0%, rgba(174,230,165,1) 100%);
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container{
+    width: 1300px;
+    height: 700px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.597);
+}
+
+.login-container .box{
+    width: 30%;
+    height: 100%;
+    position: relative;
+}
+
+.login-container .left{
+    display: flex;
+    flex-grow: 1;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 86, 28);
+    opacity: 60%;
+    position: absolute;
+    z-index: 99;
+}
+
+.login-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    z-index: 9;
+    filter: blur(0.5px);
+}
+
+.left .text h1{
+    font-size: 140px;
+    font-family: popb;
+    color: white;
+    z-index: 999;
+    position: absolute;
+    line-height: 180px;
+    left: 20px;
+}
+
+.left .text p{
+    width: 97%;
+    font-size: 25px;
+    font-family: popt;
+    line-height: 40px;
+    color: rgb(230, 230, 230);
+    text-align: justify;
+    margin-top: 25px;
+}
+
+.left .text span{
+    color: #FFE035;
+}
+
+.login-with{
+    position: absolute;
+    z-index: 99;
+    bottom: 100px;
+    left: 20px;
+}
+
+.login-with p{
+    color: white;
+    font-family: popm;
+}
+
+.social{
+    width: 70%;
+    height: 69px;
+    position: absolute;
+    z-index: 99;
+    bottom: 24px;
+    left: 40px;
+    display: flex;
+}
+
+.social .box{
+    width: 45%;
+    height: 100%;
+}
+
+.social .box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.social .box .button{
+    position: absolute;
+    text-decoration-color: white;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 1px;
+    background-color: #22bae9;
+    padding: 8px 40px;
+    border-radius: 30px;
+    transition: .3s;
+}
+
+.social .box .fb-button{
+    background-color: #3b5998;
+}
+
+.social .box .fb-button:hover{
+    text-decoration-color: #3b5998;
+}
+
+.social .box .fb-button:hover p{
+    color: #3b5998;
+}
+
+.social .box a:hover{
+    background-color: white;
+    text-decoration-color: #22bae9;
+}
+
+.social .box a:hover p{
+    color: #22bae9;
+}
+
+.social .box a p{
+    color: white;
+    font-size: 20px;
+    font-family: popl;
+}
+
+.right{
+    background-color: rgb(248, 245, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right .login-box{
+    width: 90%;
+    height: 95%;
+    position: relative;
+}
+
+.login-box .login{
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box .login h1{
+    font-family: popb;
+    font-size: 90px;
+}
+
+.login-box p{
+    text-align: justify;
+    font-family: popm;
+    line-height: 22px;
+    font-size: 15px;
+}
+
+.login-box .create{
+    color: #e48b17;
+    text-underline-offset: 2px;
+}
+
+form .txt{
+    padding: 0px 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.519);
+    margin: 30px 0;
+}
+
+.txt input{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(248, 245, 224);
+    border: none;
+    outline: none;
+    color: grey;
+    font-family: popl;
+    font-size: 23px
+}
+
+.remember label{
+    font-family: popm;
+} 
+
+.forget{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+.forget .box{
+    width: 50%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.forgotpass a{
+    position: absolute;
+    right: 0;
+    color: #e48b17c9;
+    text-decoration: none;
+    font-family: popm;
+}
+
+.login-button{
+    width: 30%;
+    height: 50px;
+    position: relative;
+    margin-left: 215px;
+    margin-top: 30px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px rgba(111, 111, 111, 0.351);
+}
+
+.login-button a{
+    font-family: popb;
+    text-transform: uppercase;
+    color: #624126;
+    text-decoration: none;
+    padding: 13px 30px;
+    position: absolute;
+    background: rgb(252,167,106);
+    background: linear-gradient(325deg, rgba(252,167,106,1) 0%, rgba(255,243,132,1) 100%);
+    transition: .3s;
+}
+
+.login-button a:hover{
+    color: white;
+}
